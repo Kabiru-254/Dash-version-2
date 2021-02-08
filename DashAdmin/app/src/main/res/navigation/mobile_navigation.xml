@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.e.dashadmin.ui.home.HomeFragment"
+        android:label="Dash Admin"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_manage_users"
+        android:name="com.e.dashadmin.ui.users.manageUsers"
+        android:label="Manage Users"
+        tools:layout="@layout/manage_users" />
+
+    <fragment
+        android:id="@+id/nav_driver_payments"
+        android:name="com.e.dashadmin.ui.driverPayments.driverPayments"
+        android:label="Driver Payments"
+        tools:layout="@layout/driver_payments" />
+</navigation>

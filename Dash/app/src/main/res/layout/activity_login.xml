@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bmw_icon"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Login"
+        android:textSize="35sp"
+        android:visibility="visible"
+        />
+
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:gravity="center_horizontal"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:gravity="center_horizontal"
+        android:autofillHints="" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:progress="1"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnSubmitCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Submit"
+        android:background="@drawable/buttons"
+        />
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to register"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password? Click here"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LLDriver"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.Offer_Rides.Offer_Rides">
+
+    <LinearLayout
+        android:id="@+id/LLPostRide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/black_car" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="casual"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Offer a ride to your neighbours"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:hint="Destination"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/etNumberPlate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:hint="Car Number Plate"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/etDepartureTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:hint="Time of Departure"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="time"
+            />
+
+        <EditText
+            android:id="@+id/etFare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:hint="Fare (Price in Ksh)"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/etNumberOfSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:hint="No of seats"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="number"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/rbToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Travel Today"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="casual"
+                android:textSize="17sp"
+                android:padding="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Travel Tomorrow"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:padding="5dp"
+                />
+        </RadioGroup>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbPostRides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right_black_48dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:background="@drawable/buttons"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="90dp"
+            app:fabSize="normal"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    </FrameLayout>

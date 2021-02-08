@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:elevation="90dp"
+    android:layout_margin="7dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/layout_style"
+            >
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="Driver name:"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvDriverFirstName"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvDriverSecondName"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/layout_style"
+            >
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="Passenger name:"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvPassFirstName"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvPassSecondName"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_style"
+            >
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Destination"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/tvDestinationHistory"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_style"
+            >
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Fare"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/tvAmountOfFare"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_style"
+            >
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Rating"
+                android:padding="5dp"
+                />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:numStars="5"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_style"
+            >
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Comments"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/tvPassComment"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

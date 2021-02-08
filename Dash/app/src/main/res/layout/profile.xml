@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.Profile.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/profileDP"
+                android:layout_width="250dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_purple" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:layout_below="@id/profileDP"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="casual"
+                android:text="Update profile"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="49dp"
+                android:id="@+id/profItems2"
+                android:layout_below="@id/profItems1"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="137dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Email Address"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/profEmailET"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="245dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profItems3"
+                android:layout_below="@id/profItems2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:text="Phone Number"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/profPhoneET"
+                    android:inputType="phone"
+                    android:layout_width="241dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:id="@+id/profItems1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/profItems"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="139dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Other Names"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/profOnamesET"
+                    android:layout_width="243dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000"
+                    android:inputType="textPersonName"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profItems"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="First Name"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/profFnameET"
+                    android:layout_width="246dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000"
+                    android:inputType="textPersonName"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_below="@+id/profItems3"
+                android:id="@+id/profileUpdateBT"
+                android:layout_marginTop="20dp"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:layout_centerHorizontal="true"
+                android:text="Update profile"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_below="@+id/profileUpdateBT"
+                android:id="@+id/profileLogout"
+                android:layout_marginTop="20dp"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="@drawable/buttons"
+                android:layout_centerHorizontal="true"
+                android:text="Logout"
+                android:textColor="#000000" />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
